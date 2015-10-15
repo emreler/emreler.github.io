@@ -1,1 +1,74 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        font-family: 'Inconsolata', sans-serif;
+        height: 100vh;
+      }
+      .list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      a:hover {
+        text-decoration: underline;
+        color:inherit;
+      }
+      @media (min-width: 75em) {
+        .content {
+          padding-top: 1em;
+           width: 40em
+        }
+      }
+      @media (max-width: 75em) {
+        .content {
+           width: 100%
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid" style="">
+      <div class="content">
+        <h1>Emre Kayan</h1>
+        <h2>Software Engineer</h2>
+        <h3>Info</h3>
+        <p>
+          Computer engineering graduate from <a href="http://www.itu.edu.tr/en/" target="_blank">Istanbul Technical University(ITU). </a><br>
+          Things I love: JavaScript, Go, HTTP, Git, Linux<br>
+        </p>
+        <h3>Projects (Project)</h3>
+        <p>
+          <div class="list">
+            <ul>
+              <li><a href="https://picbox.io">Picbox</a></li>
+            </ul>
+          </div>
+        </p>
+        <h3>Links</h3>
+        <p>
+          <div class="list">
+            <ul>
+              <li><a href="https://github.com/emreler">Github</a></li>
+              <li><a href="https://linkedin.com/in/emrekayan">LinkedIn</a></li>
+            </ul>
+          </div>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>
