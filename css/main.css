@@ -1,0 +1,33 @@
+body {
+  font-family: "Inconsolata", sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.left-column {
+  transition: background-color 0.3s !important;
+  transition: color 0.3s;
+}
+
+.right-column {
+  transition: background-color 0.3s;
+}
+
+/* Style the capsule button */
+.capsule-button {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 20px; /* Adjust the border-radius for the capsule shape */
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Style the SVG image */
+.svg-icon {
+  width: 20px; /* Adjust the width of the SVG icon */
+  height: 20px; /* Adjust the height of the SVG icon */
+  margin-right: 10px; /* Add spacing between the SVG icon and text */
+  fill: white; /* Set the color of the SVG icon */
+}

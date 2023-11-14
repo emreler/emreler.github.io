@@ -1,87 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
     <title>Emre Kayan</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Emre Kayan's homepage">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400' rel='stylesheet' type='text/css'>
-    <style>
-      body {
-        font-family: 'Inconsolata', sans-serif;
-        height: 100vh;
-      }
-      .list ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      a:hover {
-        text-decoration: underline;
-        color:inherit;
-      }
-      @media (min-width: 75em) {
-        .content {
-          padding-top: 10em;
-           width: 40em
-        }
-      }
-      @media (max-width: 75em) {
-        .content {
-          padding-top: .9375rem;
-           width: 100%
-        }
-      }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata:400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
   </head>
-  <body>
-    <div class="container-fluid" style="">
-      <div class="content">
-        <h1>Emre Kayan</h1>
-        <h2>Freelance Software Engineer</h2>
-        <p>
-          Tech I love: JavaScript/TypeScript, Go, HTTP, Git<br>
-          Other: Tennis, Basketball, Chess, Biking
-        </p>
-        <h3>Projects</h3>
-        <p>
-          <div class="list">
-            <ul>
-              <li><a href="https://getinspiro.app/" target="_blank">Inspiro</a></li>
-              <li><a href="https://github.com/emreler/finch" target="_blank">Finch</a></li>
-              <li><a href="https://github.com/emreler/picbox" target="_blank">Picbox</a></li>
-              <li><a href="https://github.com/emreler/cool-mail-bot" target="_blank">Cool Mail Bot</a></li>
-            </ul>
-          </div>
-        </p>
-        <h3>Links</h3>
-        <p>
-          <div class="list">
-            <ul>
-              <li><a href="https://github.com/emreler" target="_blank">GitHub</a></li>
-              <li><a href="https://linkedin.com/in/emrekayan" target="_blank">LinkedIn</a></li>
-              <li><a href="mailto:emrekayan@gmail.com" target="_blank">Email</a></li>
-            </ul>
-          </div>
-        </p>
+  <body class="flex h-screen">
+    <!-- Left Column (40% width) -->
+    <div class="left-column lg:w-2/5 w-full p-4">
+      <button class="capsule-button change-colors-button flex text-xs">
+        <svg
+          class="w-4 h-4 mr-4"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 20 18"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M11.484 6.166 13 4h6m0 0-3-3m3 3-3 3M1 14h5l1.577-2.253M1 4h5l7 10h6m0 0-3 3m3-3-3-3"
+          />
+        </svg>
+        Colors
+      </button>
+
+      <h1 class="text-4xl font-semibold mt-20">Emre Kayan</h1>
+
+      <h2 class="text-xl">Freelance Software Engineer</h2>
+
+      <p class="my-5">
+        Tech I love: JavaScript/TypeScript, Go, HTTP, Git<br />
+        Other: Tennis, Basketball, Chess, Biking
+      </p>
+
+      <div class="my-5">
+        <h3 class="text-xl">Projects</h3>
+        <p></p>
+        <div class="list">
+          <ul>
+            <li>
+              <a href="https://getinspiro.app/" target="_blank">Inspiro</a>
+            </li>
+            <li>
+              <a href="https://github.com/emreler/finch" target="_blank"
+                >Finch</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/emreler/picbox" target="_blank"
+                >Picbox</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/emreler/cool-mail-bot" target="_blank"
+                >Cool Mail Bot</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="text-xl">Links</h3>
+
+      <div class="list">
+        <ul>
+          <li>
+            <a href="https://github.com/emreler" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/emrekayan" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="mailto:emrekayan@gmail.com" target="_blank">Email</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-49184683-2', 'auto');
-      ga('send', 'pageview');
+    <!-- Right Column (60% width) -->
+    <div class="right-column lg:w-3/5 lg:block hidden p-4"></div>
 
-    </script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
